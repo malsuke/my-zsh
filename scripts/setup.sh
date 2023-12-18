@@ -1,6 +1,10 @@
 #!/bin/zsh
-mkdir $HOME/.zsh
-mv $HOME/.zshrc $HOME/.zshrc.bak
+if [ ! -d $HOME/.zsh ]; then
+  mkdir $HOME/.zsh
+fi
+if [ -f $HOME/.zshrc ]; then
+  mv $HOME/.zshrc $HOME/.zshrc.bak
+fi
 cp ./.zshrc $HOME/.zshrc
 
 function brew-install() {
