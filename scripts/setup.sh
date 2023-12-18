@@ -33,6 +33,7 @@ function alter_cmd() {
   brew install grc
   brew install ghq
   brew install peco
+  brew install hub
   brew tap homebrew/cask-fonts
   brew install --cask font-hack-nerd-font
 }
