@@ -2,8 +2,16 @@ name: setup test
 on:
   push:
     branches: [main]
+    paths:
+      - "scripts/**"
+      - ".zshrc"
+      - "p10k"
   pull_request:
     branches: [main]
+    paths:
+      - "scripts/**"
+      - ".zshrc"
+      - "p10k"
 
 jobs:
   build:
