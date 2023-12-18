@@ -57,4 +57,4 @@ function install() {
   alter_cmd
 }
 
-install()
+install
