@@ -22,7 +22,7 @@ function zsh_autosuggestions() {
   git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.zsh/zsh-autosuggestions
 }
 
-function zsh_syntax-highlighting() {
+function zsh_syntax_highlighting() {
   git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh/zsh-syntax-highlighting
 }
 
@@ -53,7 +53,7 @@ function install() {
   brew_install
   p10k
   zsh_autosuggestions
-  zsh_syntax-highlighting
+  zsh_syntax_highlighting
   alter_cmd
 }
 
