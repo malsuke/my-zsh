@@ -7,7 +7,7 @@ if [ -f $HOME/.zshrc ]; then
 fi
 cp ./.zshrc $HOME/.zshrc
 
-function brew-install() {
+function brew_install() {
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   eval "$(/opt/homebrew/bin/brew shellenv)"
 }
@@ -18,15 +18,15 @@ function p10k() {
   cp ./p10k/powerlevel10k.zsh-theme $HOME/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 }
 
-function zsh-autosuggestions() {
+function zsh_autosuggestions() {
   git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.zsh/zsh-autosuggestions
 }
 
-function zsh-syntax-highlighting() {
+function zsh_syntax-highlighting() {
   git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh/zsh-syntax-highlighting
 }
 
-function alter-cmd() {
+function alter_cmd() {
   # change default cmd more useful
   brew install ccat
   brew install exa
@@ -50,11 +50,11 @@ function extra() {
 }
 
 function install() {
-  brew-install
+  brew_install
   p10k
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  alter-cmd
+  zsh_autosuggestions
+  zsh_syntax-highlighting
+  alter_cmd
 }
 
 install()
