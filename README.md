@@ -1,5 +1,7 @@
 # my-zsh
 
+![test](https://github.com/malsuke/my-zsh/workflows/setup%20test/badge.svg)
+
 ## Setup
 
 ```bash
