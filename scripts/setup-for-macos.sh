@@ -14,7 +14,7 @@ function brew_install() {
 
 function p10k() {
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.zsh/powerlevel10k
-  cp .p10k.zsh $HOME/
+  cp ./p10k/.p10k.zsh $HOME/
   cp ./p10k/powerlevel10k.zsh-theme $HOME/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 }
 
