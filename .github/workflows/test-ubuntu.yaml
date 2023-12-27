@@ -1,0 +1,27 @@
+name: setup test
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".zshrc"
+      - "p10k"
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".zshrc"
+      - "p10k"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup test
+        run: |
+          - sudo apt install zsh
+          - chsh -s $(which zsh)
+          - sudo reboot
+      - name: setup test
+        run: zsh ./scripts/setup.sh
